@@ -1,0 +1,9 @@
+@echo off
+echo verificando se positives.vec ja existe...
+
+IF EXIST positives.vec (
+    echo positives.vec ja existe, pulando criacao...
+) ELSE (
+    echo positives.vec nao encontrado, criando...
+    "D:\opencv\build\x64\vc15\bin\opencv_createsamples.exe" -info positives.txt -num 20000 -w 24 -h 24 -vec positives.vec
+)
