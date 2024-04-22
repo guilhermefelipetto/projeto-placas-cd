@@ -3,10 +3,10 @@
 import cv2
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r'D:\\tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'Z:\\placas_cd\\tesseract\\tesseract.exe'
 
 def detect_plate(frame):
-    plate_cascade = cv2.CascadeClassifier('D:\\train_dir\\cascade.xml')
+    plate_cascade = cv2.CascadeClassifier('Z:\\placas_cd\\train_dir\\cascade.xml')
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -23,7 +23,7 @@ def detect_plate(frame):
 
     return frame
 
-video = 'D:\\video.MTS'
+video = 'Z:\\placas_cd\\video.MTS'
 cap = cv2.VideoCapture(video)
 
 desired_width = 640

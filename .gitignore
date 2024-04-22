@@ -1,5 +1,9 @@
 .venv
 dados
 negative-videos
-positives20000e24x24.vec
-positives20000e108x58.vec
+negatives
+negatives.txt
+positives.txt
+positives20ke108x58.vec
+positives20ke60x24.vec
+__pycache__

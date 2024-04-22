@@ -24,10 +24,10 @@ def convert_annotations_to_positives(directories, output_file):
 
 # verifica isso aqui pra ve se tua ordem de diretorios ta certa
 directories = [
-    'dados/RodoSol-ALPR/images/cars-br',
     'dados/RodoSol-ALPR/images/cars-me',
-    'dados/RodoSol-ALPR/images/motorcycles-br',
-    'dados/RodoSol-ALPR/images/motorcycles-me'
+    'dados/RodoSol-ALPR/images/cars-br',
+    'dados/RodoSol-ALPR/images/motorcycles-me',
+    'dados/RodoSol-ALPR/images/motorcycles-br'
 ]
 
 """
