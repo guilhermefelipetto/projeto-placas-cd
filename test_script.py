@@ -19,7 +19,7 @@ def detect_plate(frame):
 
         plate_text = pytesseract.image_to_string(roi, config='--psm 11')
 
-        print(f'placa {plate_text}')
+        print(f'{plate_text}')
 
     return frame
 

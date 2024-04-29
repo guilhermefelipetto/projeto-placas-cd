@@ -5,7 +5,7 @@ import time
 from random import choice
 
 
-def search_images(query, access_key, max_requests, per_page=10):
+def search_images(query, access_key, max_requests, per_page=25):
     url = 'https://api.unsplash.com/search/photos'
     headers = {
         'Authorization': f'Client-ID {access_key}'
@@ -43,8 +43,8 @@ def download_images(images):
                     f.write(chunk)
                     i += 12
                 print(f'downloaded: {filename}')
-                time.sleep(0.3)
+                time.sleep(0.1)
 
-max_requests = 4800
-access_key = '2_mgPIYtPEqKjdHVRpRX3jzwRYsjoQztm0UduPusmYE'
-search_images('aquatic scenario', access_key, max_requests)
+max_requests = 50000
+access_key = '[key]'
+search_images('urban shopping', access_key, max_requests)

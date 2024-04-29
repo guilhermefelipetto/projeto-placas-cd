@@ -5,9 +5,9 @@ echo Iniciando o treinamento do modelo...
 -data "Z:\placas_cd\train_dir" ^
 -vec positives20ke60x24.vec ^
 -bg negatives.txt ^
--numPos 3600 ^
--numNeg 3559 ^
--numStages 10 ^
+-numPos 9000 ^
+-numNeg 8210 ^
+-numStages 8 ^
 -precalcValBufSize 1024 ^
 -precalcIdxBufSize 1024 ^
 -featureType HAAR ^
