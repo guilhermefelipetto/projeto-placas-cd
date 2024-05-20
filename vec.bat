@@ -5,5 +5,5 @@ IF EXIST positives.vec (
     echo positives.vec ja existe, pulando criacao...
 ) ELSE (
     echo positives.vec nao encontrado, criando...
-    "Z:\placas_cd\opencv\build\x64\vc15\bin\opencv_createsamples.exe" -info positives.txt -num 20000 -w 60 -h 24 -vec positives.vec
+    "Z:\placas_cd\opencv\build\x64\vc15\bin\opencv_createsamples.exe" -info positives.txt -num 20000 -w 60 -h 24 -vec positives20k.vec
 )
