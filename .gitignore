@@ -8,4 +8,5 @@ positives20ke108x58.vec
 positives20ke60x24.vec
 __pycache__
 test_script.py
-database_scripts\query_teste.sql
+database_scripts/query_teste.sql
+test_script.py
